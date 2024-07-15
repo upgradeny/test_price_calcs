@@ -647,11 +647,13 @@ $(document).ready(function(){
 				print_cost_table += print_cost_table_sub;
 				print_cost_table += '</table><div class="br_line"><br/></div>';
 											
-											
+				/*							
 				print_cost_table += '<table id="input_data_table_t_cost" class="table_print_pdf"> ' + 
 										'<tr><td class="text-bold"> Total Cost  </td>' + 
 										'<td class="text-bold">  ' + numberWithCommas( round_2_digits(cost_w_tax) ) +  ' </td></tr>' +
-										'</table><div class="br_line"><br/></div>';							
+										'</table><div class="br_line"><br/></div>';
+*/
+				
 				
 				let profit = round_2_digits(clientPrice - totalCost);
 				
@@ -690,6 +692,13 @@ $(document).ready(function(){
 										notes_textarea +
 										'</p>' + 
 									'</div>';
+
+				let price_with_tax = '<div id="input_data_table_t_cost" class="table_print_pdf">' +
+										'<h3>Notes</h3>' +
+										'<p>' +
+										 Total Cost including tax : $ + numberWithCommas( round_2_digits(cost_w_tax) )
+										'</p>' + 
+									'</div>';
 					
 				let print_notes =  notes_textarea.length > 0 ? html_notes : '';
 				
@@ -701,6 +710,7 @@ $(document).ready(function(){
 				$('#editor').append(print_input_data);
 				$('#editor').append(print_acessories_data);
 				$('#editor').append(print_notes);
+				$('#editor').append(price_with_tax);
 				
 			});	
 			

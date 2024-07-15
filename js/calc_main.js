@@ -696,7 +696,7 @@ $(document).ready(function(){
 				let price_with_tax = '<div id="input_data_table_t_cost" class="table_print_1">' +
 										
 										'<p>' +
-										 'Total Cost including tax : $ ' + numberWithCommas( round_2_digits(cost_w_tax) ) +
+										 'Price including tax : $' + numberWithCommas( round_2_digits(cost_w_tax) ) +
 										'</p>' + 
 									'</div>';
 					

@@ -157,7 +157,7 @@ $(document).ready(function(){
 								'<option name="" value="1.7"> 70% Markup </option>' +
 								'<option name="" value="1.8"> 80% Markup </option>' +
 								'<option name="" value="1.9"> 90% Markup </option>' +
-								'<option name="" value="2.0"> 100% Markup </option>' +
+								'<option name="" value="2.0" selected> 100% Markup </option>' +
 								'<option name="" value="2.15"> 115% Markup </option>' +
 							'</select>' +								
 						'</div>' +

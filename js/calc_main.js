@@ -144,7 +144,7 @@ $(document).ready(function(){
 							'</label>' +
 							'<div class="input_field_n_dollar">' +
 								'<span class="dollar_sign"> $ </span>' +
-								'<input type="text" id="acessories_price_item_' + num1  + '" class="number_req form-control acessories_price_item" name ="acessories_price_item_' + num1  + '" value="" placeholder="price"/>' +
+								'<input type="text" id="acessories_price_item_' + num1  + '" class="number_req form-control acessories_price_item" name ="acessories_price_item_' + num1  + '" value="" />' +
 							'</div>	' +
 						'</div>' +
 						'<div class="select_field col-md-4 acessories_markup_main_units">' +
@@ -152,13 +152,13 @@ $(document).ready(function(){
 								'Select Markup' +
 							'</label>' +
 							'<select class="acessories_markup_select" id="acessories_markup_select' + num1  + '" name ="acessories_markup_select' + num1  + '">' +
-								'<option name="" value="1.5"> 50%  Markup </option>' +
-								'<option name="" value="1.6"> 60% Markup </option>' +
-								'<option name="" value="1.7"> 70% Markup </option>' +
-								'<option name="" value="1.8"> 80% Markup </option>' +
-								'<option name="" value="1.9"> 90% Markup </option>' +
-								'<option name="" value="2.0" selected> 100% Markup </option>' +
-								'<option name="" value="2.15"> 115% Markup </option>' +
+								'<option name="" value="1.5"> 50%  </option>' +
+								'<option name="" value="1.6"> 60% </option>' +
+								'<option name="" value="1.7"> 70% </option>' +
+								'<option name="" value="1.8"> 80% </option>' +
+								'<option name="" value="1.9"> 90% </option>' +
+								'<option name="" value="2.0" selected> 100% </option>' +
+								'<option name="" value="2.15"> 115% </option>' +
 							'</select>' +								
 						'</div>' +
 						'<div class="col-md-1"><label>&nbsp;</label><button type="button" class="btn_minus acessories_markup_minus"> - </button></div>' +
@@ -693,8 +693,8 @@ $(document).ready(function(){
 										'</p>' + 
 									'</div>';
 
-				let price_with_tax = '<div id="input_data_table_t_cost" class="table_print_pdf">' +
-										'<h3>Notes</h3>' +
+				let price_with_tax = '<div id="input_data_table_t_cost" class="table_print_1">' +
+										
 										'<p>' +
 										 'Total Cost including tax : $ ' + numberWithCommas( round_2_digits(cost_w_tax) ) +
 										'</p>' + 

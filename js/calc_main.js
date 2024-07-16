@@ -695,13 +695,13 @@ $(document).ready(function(){
 										notes_textarea +
 										'</p>' + 
 									'</div>';
-
+/*
 				let price_with_tax = '<div id="input_data_table_t_cost" class="table_print_1">' +
 										
 										'<h3 class="text-right">' +
 										 'Total cost wth tax : $' + numberWithCommas( round_2_digits(cost_w_tax) ) +
 										'</h3>' + 
-									'</div>';
+*/									'</div>';
 					
 				let print_notes =  notes_textarea.length > 0 ? html_notes : '';
 				
@@ -713,7 +713,7 @@ $(document).ready(function(){
 				$('#editor').append(print_input_data);
 				$('#editor').append(print_acessories_data);
 				$('#editor').append(print_notes);
-				$('#editor').append(price_with_tax);
+				// $('#editor').append(price_with_tax);
 				
 			});	
 			

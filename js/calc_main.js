@@ -687,7 +687,10 @@ $(document).ready(function(){
 				let notes_textarea = jQuery("#notes_textarea").val();	
 				
 				let html_notes = '<div class="table_print_1">' +
-										'<h3>Notes <span class="text-right"> Total cost wth tax : $' + numberWithCommas( round_2_digits(cost_w_tax) ) + '</span></h3>' +
+					'<table id="input_data_table_t_cost"><tr>'+
+										'<td><h3>Notes<h3></td>'+
+					'<td><h3 class="text-right"> Total cost wth tax : $' + numberWithCommas( round_2_digits(cost_w_tax) ) + '</h3></td>' +
+					'<tr/></table>'+
 										'<p>' +
 										notes_textarea +
 										'</p>' + 
@@ -695,7 +698,7 @@ $(document).ready(function(){
 
 				let price_with_tax = '<div id="input_data_table_t_cost" class="table_print_1">' +
 										
-										'<h3>' +
+										'<h3 class="text-right">' +
 										 'Total cost wth tax : $' + numberWithCommas( round_2_digits(cost_w_tax) ) +
 										'</h3>' + 
 									'</div>';

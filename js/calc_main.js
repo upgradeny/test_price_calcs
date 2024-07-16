@@ -687,7 +687,7 @@ $(document).ready(function(){
 				let notes_textarea = jQuery("#notes_textarea").val();	
 				
 				let html_notes = '<div class="table_print_1">' +
-										'<h3>Notes <span class="text-right"> Total cost wth tax : $' + numberWithCommas( round_2_digits(cost_w_tax) ) + </span></h3>' +
+										'<h3>Notes <span class="text-right"> Total cost wth tax : $' + numberWithCommas( round_2_digits(cost_w_tax) ) + '</span></h3>' +
 										'<p>' +
 										notes_textarea +
 										'</p>' + 
